@@ -18,21 +18,11 @@ fun forTest(){
         for (n in 1..4){
         val result =if (n == 1) {
             println("当前余额为:$money")
-            println("请进行交易选项")
-            println("1.查询金额 ")
-            println("2.存款")
-            println("3.取款")
-            println("4.中止交易")
         }else if(n == 2){
             val scanner = Scanner(System.`in`)
             val nu = scanner.nextInt()
             println("输入的金额是：$nu")
-            println("当前余额为:$nu")
-            println("请进行交易选项")
-            println("1.查询金额 ")
-            println("2.存款")
-            println("3.取款")
-            println("4.中止交易")
+            println("当前余额为:$nu+$money")
         }else if(n == 3) {
             val scanner = Scanner(System.`in`)
             val num = scanner.nextInt()
@@ -46,20 +36,15 @@ fun forTest(){
                     break
                 }
             }
-            println("请进行交易选项")
-            println("1.查询金额 ")
-            println("2.存款")
-            println("3.取款")
-            println("4.中止交易")
         }else if (n == 4){
             break
         }else{
             println("错误，请重新输入")
+        }
             println("请进行交易选项")
             println("1.查询金额 ")
             println("2.存款")
             println("3.取款")
             println("4.中止交易")
-        }
         }
 }
