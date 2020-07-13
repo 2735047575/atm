@@ -41,10 +41,11 @@ fun forTest(){
         }else{
             println("错误，请重新输入")
         }
-            println("请进行交易选项")
-            println("1.查询金额 ")
-            println("2.存款")
-            println("3.取款")
-            println("4.中止交易")
+
         }
+    println("请进行交易选项")
+    println("1.查询金额 ")
+    println("2.存款")
+    println("3.取款")
+    println("4.中止交易")
 }
