@@ -35,6 +35,17 @@ fun forTest(){
                 } else {
                     break
                 }
+                println("是否继续交易：1/0")
+                val scanner = Scanner(System.`in`)
+                val wor = scanner.nextInt()
+                if (wor == 1) {
+                    println("请进行交易选项")
+                    println("1.查询金额 ")
+                    println("2.存款")
+                    println("3.取款")
+                    println("4.中止交易")
+                } else {
+                }
             }
         }else if (n == 4){
             break
@@ -43,9 +54,5 @@ fun forTest(){
         }
 
         }
-    println("请进行交易选项")
-    println("1.查询金额 ")
-    println("2.存款")
-    println("3.取款")
-    println("4.中止交易")
+
 }
