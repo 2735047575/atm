@@ -141,3 +141,36 @@ fun main(){
     println(shape.name)    //get常量和变量
 }*/
 
+//可空类型
+class Boy{
+    //可空类型
+    var girlfriend:String?=null
+    fun show() {
+        println(girlfriend?.length)    //判断是否空
+        println(girlfriend!!.length)   //一定不是空
+    }
+}/*
+fun main(){
+    val tt = Myclass.look()
+    //不为空才执行对应方法
+    println(tt?.length)
+}*/
+/*
+class Activity{
+    //懒加载
+    val data:String by lazy {
+        "图"
+    }
+
+    //延迟加载  必须在某个时期初始化
+    lateinit var imgData:String
+
+    fun showActivity(){
+        imgData = "测试数据"     //初始化
+        println("显示下载的数据:$data")
+    }
+}
+
+fun main(){
+    Activity().showActivity()
+}*/
